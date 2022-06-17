@@ -1,3 +1,4 @@
+package kr.ne.abc.template.common.selenium;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -25,6 +26,7 @@ public class Main {
 		element.click();
 		element = driver.findElement(By.cssSelector("#ContentPlaceHolder1_topPageDiv > nav > ul > li:nth-child(2)"));
 
+		int numcheck;
 		while(true) {
 			webElements = driver.findElements(By.cssSelector("#content > div.container.space-bottom-2 > div.card > div > div.table-responsive.mb-2.mb-md-0 > table > tbody > tr"));
 			Collections.reverse(webElements);
